@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class kdvodev {
+    public static void main(String[] args) {
+        double toplam, kdvOran = 0.18, kdvOranSekiz = 0.08;
+
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Fatura Tutarını giriniz : ");
+        toplam = input.nextInt();
+        if (toplam <= 1000) {
+            double genelToplam = (toplam * kdvOranSekiz) + toplam;
+            System.out.println("%8 Kdv Fiyatı : " + (toplam * kdvOranSekiz));
+            System.out.println("Genel Toplam :" + genelToplam);
+
+        } else {
+            double genelToplam = (toplam * kdvOran) + toplam;
+            System.out.println("%18 Kdv Fiyatı  : " + (toplam * kdvOran));
+            System.out.println("Genel Toplam :" + genelToplam);
+        }
+
+    }
+}
+
