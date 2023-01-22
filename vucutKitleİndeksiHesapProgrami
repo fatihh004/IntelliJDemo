@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class indeks {
+    public static void main(String[] args) {
+        double kilo, boy ;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Kilonuzu Giriniz");
+        kilo = inp.nextDouble();
+        System.out.println("Boyunuzu Giriniz(Metre Cinsinden) :");
+        boy = inp.nextDouble();
+
+
+        double boykaresi = boy * boy;
+        double indeks = kilo / boykaresi;
+        System.out.println("Vücut Kitle İndeksi :" +  indeks);
+
+        if (indeks < 18.5 ) {
+            System.out.println("İdeal Kilonun Altında");
+
+        }else if (indeks >= 18.5 && indeks <=24.9 ) {
+            System.out.println("ideal kiloda");
+
+        }else if (indeks >= 25 && indeks <= 29.9 ) {
+            System.out.println("İdeal Kilonun Üstünde");
+
+        }else if (indeks >= 30 && indeks <= 39.9){
+            System.out.println("İdeal Kilonun Çok Üstünde ( OBEZ )");
+
+        }else if ( indeks >= 40){
+            System.out.println("İdeal Kilonun Çok Üstünde (MORBİD OBEZ )");
+
+        }else {
+            System.out.println("Geçerli Bir Değer Giriniz");
+
+        }
+
+    }
+}
