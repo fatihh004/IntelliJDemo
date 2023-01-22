@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class sinifgecme {
+    public static void main(String[] args) {
+        int matematik, fizik, turkce, kimya, muzik;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Matematik Notunuz :");
+        matematik = input.nextInt();
+        System.out.println("Fizik Notunuz :");
+        fizik = input.nextInt();
+        System.out.println("Türkçe Notunuz : ");
+        turkce = input.nextInt();
+        System.out.println("Kimya Notunuz");
+        kimya = input.nextInt();
+        System.out.println("Müzik Notunuz :");
+        muzik = input.nextInt();
+
+        double avarage = (matematik + fizik + turkce + kimya + muzik ) / 5;
+
+        if (avarage <= 0 || avarage >100 ) {
+            System.out.println("Geçerli Not Giriniz");
+        }else if  ( avarage > 55 ) {
+            System.out.println("Sınıfı Geçtiniz Ortalamanız :" + avarage);
+        }else {
+            System.out.println("Geçmiş Olsun Seneye Görüşürüz ..");
+        }
+        }
+
+
+    }
+
