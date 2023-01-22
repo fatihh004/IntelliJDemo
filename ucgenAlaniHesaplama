@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ucgenHesaplama {
+    public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+     double a , b ,c , Alan , alaninKareKoku;
+
+            System.out.println("a Kenarını Giriniz");
+            a = input.nextInt();
+            System.out.println("b Kenarını Giriniz");
+            b = input.nextInt();
+            System.out.println("c Kenarını Giriniz");
+            c = input.nextInt();
+            double u = ((a + b + c) / 2);
+            alaninKareKoku = u * (u - a) * (u - b) * (u - c);
+        System.out.println(Math.sqrt(alaninKareKoku)); //2 ;
+
+
+
+    }
+
+}
