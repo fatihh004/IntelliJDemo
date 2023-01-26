@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class bosdeneme {
+    public static void main(String[] args) {
+        int a = 1, total = 1, c, ortalama = 0;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir Sınır Sayısı Giriniz");
+        c = input.nextInt();
+        System.out.println("5 in katları :");
+        for ( a = 1 ; a <= c ; a*=5 ) {
+            System.out.print(a + " ,");
+        }
+        System.out.println("");
+        System.out.println("4 ün katları :");
+        for ( a = 1 ; a <= c ; a*=4 ) {
+
+            System.out.print(a +" ,");
+        }
+        }
+    }
+
