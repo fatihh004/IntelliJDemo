@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class bosdeneme {
+    public static void main(String[] args) {
+int a =0  , total = 0 , c, ortalama =0;
+
+Scanner input = new Scanner(System.in);
+        System.out.println("Bir Sayı Giriniz");
+        c = input.nextInt();
+        while ( a < c ){
+
+                a++;
+            if (a%3 == 0 && a%4 == 0 ) {
+                total += a ;
+                ortalama++ ;
+            }
+
+        }System.out.println("Girdiğiniz Sayıya Kadar 3'e ve 4'e Tam Bölünen Sayıların Ortalaması : " +total / ortalama);
+    }
+}
