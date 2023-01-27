@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class obebOkek {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n1, n2;
+        int i = 0;
+        int c = 0 ;
+        int ebob = 1;
+        int ekok  ;
+
+
+
+        System.out.println("ilk sayıyı giriniz");
+        n1 = scan.nextInt();
+        System.out.println("ikinci sayıyı giriniz");
+        n2 = scan.nextInt();
+        while (i <= n1 )  {
+            i++;
+            if (n1 % i == 0 && n2 % i == 0) {
+                ebob = i;
+
+            }
+
+        }System.out.println("ebob : " +ebob);
+
+
+ekok = n1 * n2 / ebob ;
+        System.out.println(" ekok : " +ekok);
+    }
+}
