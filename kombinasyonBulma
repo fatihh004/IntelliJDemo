@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class faktoriyel {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Bu Uygulamada Kombinasyon Hesaplayacağız");
+        System.out.println("1. sayıyı giriniz :");
+        int n = scan.nextInt();
+        System.out.println("2 . sayıyı giriniz :");
+        int n2 = scan.nextInt();
+        int total = 1;
+        int total2 = 1;
+        for (int i = 1; i <= n; i++) {
+
+            total = total * i;
+        }
+        for (int i2 = 1; i2 <= n2; i2++) {
+            total2 = total2 * i2;
+
+
+        }
+        System.out.println("C" + "(" +n + ","  +n2 +")"+ " : " + total / (total2 * (n - n2)));
+    }
+}
