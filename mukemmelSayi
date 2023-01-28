@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class mukemmelSayi {
+    public static void main(String[] args) {
+        int n1, i = 0, total = 0, bolen = 0;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Mükemmel Sayı Sorgulamasını İstediğiniz Sayıyı Giriniz : ");
+        n1 = input.nextInt();
+
+            while (i < n1) {
+                i++;
+                if (n1 % i == 0) {
+                    bolen = i;
+                    total += bolen;
+                }
+            }
+            if (n1 == total - n1) {
+                System.out.println("girdiğiniz sayı bir mükemmel sayıdır");
+                System.out.println(n1 + " = " + (total - n1));
+            } else {
+                System.out.println("girdiğiniz sayı bir mükemmel sayı değildir");
+                System.out.println(n1 + " !=" + (total - n1));
+            }
+        }
+
+    }
