@@ -1,0 +1,100 @@
+import java.util.Scanner;
+
+public class gelismisHesapMakinesi {
+    static int sum(int a, int b) {
+        int result = a + b;
+        System.out.println("sonuç : " + result);
+        return result;
+    }
+    static int cik(int a, int b) {
+        int result = a - b;
+        System.out.println("sonuç :  " + result);
+        return result;
+    }
+    static int carp(int a, int b) {
+        int result = a * b;
+        System.out.println("sonuç : " + result);
+        return result;
+    }
+    static int bol(int a, int b) {
+        int result = a / b;
+        System.out.println("sonuç : " + result);
+        return result;
+    }
+    static int us(int a, int b) {
+        int result = 1;
+        for (int i = 1; i <= b; i++) {
+            result *= a;
+        }
+        System.out.println("sonuç : " + result);
+        return result;
+    }
+    static int mod(int a, int b) {
+        int result;
+        result = a % b;
+        System.out.println("sonuç : " + result);
+        return result;
+    }
+    static void dik(int a, int b) {
+        System.out.println("alan  : " + a*b + " br2");
+        System.out.println("çevre : " + 2*(a+b) + " br");
+    }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int select, c = 0, total = 1;
+
+        String menu = "1 - toplama\n "
+                + "2 - cikarma\n "
+                + "3 - carpma\n "
+                + "4 - bolme\n "
+                + "5 - üslü sayı hesaplama\n "
+                + "6 - mod alma\n "
+                + "7 -dikörtgen alan ve çevre \n "
+                + "0 - çıkış yap \n ";
+        System.out.println(menu);
+        while (true ) {
+        System.out.print("bir işlem seçiniz :");
+            select = input.nextInt();
+            if (select == 0) {
+                System.out.println("görüşmek üzere ");
+                break ;
+            } else {
+                System.out.print("1. sayıyı giriniz : ");
+                int a = input.nextInt();
+                System.out.print("2. sayıyı giriniz : ");
+                int b = input.nextInt();
+
+                switch (select) {
+                    case 1:
+                        sum(a, b);
+                        break;
+                    case 2:
+                        cik(a, b);
+                        break;
+                    case 3:
+                        carp(a, b);
+                        break;
+                    case 4:
+                        bol(a, b);
+                        break;
+                    case 5:
+                        us(a, b);
+                        break;
+                    case 6:
+                        mod(a, b);
+                        break;
+                    case 7:
+                        dik(a, b);
+                        break;
+
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
