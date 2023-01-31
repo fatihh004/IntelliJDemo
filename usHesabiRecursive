@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class recursiveUsHesap {
+    static int us(int a, int b) {
+        int result = 1;
+        for (int i = 0; i < b; i++) {
+            result *= a;
+        if ( a == 0 ) {
+            System.out.println("taban değeri 0 olamaz");
+            return 0 ;
+        }
+        }System.out.println("Sonuç : " + result);
+
+        return result;
+
+    }
+
+    public static void main(String[] args) {
+        int a, b;
+        Scanner input = new Scanner(System.in);
+        while ( true  ) {
+            System.out.print("Taban Değerini Giriniz : ");
+            a = input.nextInt();
+            System.out.print("Üs Değerini Giriniz : ");
+            b = input.nextInt();
+
+            us(a, b);
+        }
+    }
+}
