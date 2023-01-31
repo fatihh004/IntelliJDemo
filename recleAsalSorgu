@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class recAsal {
+    static int asal(int a) {
+
+        if (a == 2 || a == 3 || a == 5) {
+            System.out.println("Sayı Asaldır");
+        } else if (a % 2 != 0 && a % 3 != 0 && a % 5 != 0 && a % 7 != 0) {
+            System.out.print("Sayı Asaldır ==>");
+        }else if ( a == 0 ) {
+            
+        }
+        else {
+            System.out.print("Sayı Asal değildir ==>");
+        }
+
+        return a;
+    }
+
+    public static void main(String[] args) {
+while ( true ) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Programdan Çıkmak İçin 0'a Basınız");
+        System.out.print("Bir sayı giriniz  : ");
+
+        int a = input.nextInt();
+
+            System.out.println(asal(a));
+if ( a == 0) {
+    System.out.println("görüşmek üzere ");
+    break ;
+}
+        }
+
+    }
+
+}
+
