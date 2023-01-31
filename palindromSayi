@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class palindrom2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir sayı giriniz");
+        int a = scan.nextInt(), b = 0, total = 0, sonBasamak, yeniSayi = 0;
+        while (a != 0) {
+            sonBasamak = a % 10;
+            yeniSayi = (yeniSayi * 10) + sonBasamak;
+            a /= 10;
+            if (a == yeniSayi) {
+                System.out.println("bu sayı palindromdur");
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
